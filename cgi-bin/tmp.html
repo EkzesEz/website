@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style type="text/css">
+        .right{
+            background: green;
+            width: 25%;
+        }
+    </style>
+</head>""")
+print(f"""
+<body>
+    <form action="/cgi-bin/script.py" method="get">
+        <ol><div class="right">
+            <li>QUESTION 1</li>
+            <input type="radio" value="1.1" name="answer1" > ANSWER1.1<br>
+            <input type="radio" value="1.2" name="answer1" > ANSWER1.2<br>
+            <input type="radio" value="1.3" name="answer1" > ANSWER1.3<br>
+            </div>
+            <div style="width: 25%; background: green">
+            <li>QUESTION 2</li>
+            <input type="radio" value="2.1" name="answer2" > ANSWER2.1<br>
+            <input type="radio" value="2.2" name="answer2" > ANSWER2.2<br>
+            <input type="radio" value="2.3" name="answer2" > ANSWER2.3<br>
+            </div>
+            <div style="width: 25%; background: red">
+            <li>QUESTION 3</li>
+            <input type="radio" value="3.1" name="answer3" > ANSWER3.1<br>
+            <input type="radio" value="3.2" name="answer3" > ANSWER3.2<br>
+            <input type="radio" value="3.3" name="answer3" > ANSWER3.3<br>
+            </div>
+        </ol>
+        <input type="submit"> <input type="reset">
+    </form>
+</body>
+</html>

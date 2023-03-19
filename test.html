@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Test</title>
 </head>
 <body>
-    <form action="/cgi-bin/script.py" method="get">
-    <input type="text" name="city" value="syka blyat">Новосибирск<br>
-    <input type="submit"> <input type="reset">
-    </form>
+    <div class="container">
+        <form action="/cgi-bin/script.py" method="get">
+            <ol>
+                <div>
+                <li>QUESTION 1</li>
+                <input type="radio" value="1.1" name="answer1" id="a11">
+                <label for="a11">ANSWER1.1</label><br>
+                <input type="radio" value="1.2" name="answer1" id="a12">
+                <label for="a12">ANSWER1.2</label><br>
+                <input type="radio" value="1.3" name="answer1" id="a13">
+                <label for="a13">ANSWER1.3</label><br>
+                <li>QUESTION 2</li>
+                <input type="radio" value="2.1" name="answer2" id="a21">
+                <label for="a21">ANSWER1.1</label><br>
+                <input type="radio" value="2.2" name="answer2" id="a22">
+                <label for="a22">ANSWER2.2</label><br>
+                <input type="radio" value="2.3" name="answer2" id="a23">
+                <label for="a23">ANSWER2.3</label><br>
+                <li>QUESTION 3</li>
+                <input type="radio" value="3.1" name="answer3" id="a31">
+                <label for="a31">ANSWER3.1</label><br>
+                <input type="radio" value="3.2" name="answer3" id="a32">
+                <label for="a32">ANSWER3.2</label><br>
+                <input type="radio" value="3.3" name="answer3" id="a33">
+                <label for="a33">ANSWER3.3</label><br>
+            </div>
+            </ol>
+            <input type="submit" value="Ответить"> <input type="reset">
+        </form>
+    </div>
 </body>
+
 </html>
